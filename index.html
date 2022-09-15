@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-5"></div>
+        <div class="col-2 container">
+            <form style="background-color: black;" class=" border mt-5 text-center  p-3">
+                <input id="result" type="text"><br>
+                <br>
+                <button id="seven" type="button" onclick="displayNum('7')" class="btn btn-warning ms-1">7</button>
+                <button id="eight" type="button" onclick="displayNum('8')" class="btn btn-warning ms-2">8</button>
+                <button id="nine" type="button" onclick="displayNum('9')" class="btn btn-warning ms-2">9</button>
+                <button id="div" type="button" onclick="displayNum('/')"
+                    class="btn btn-warning ms-2">&#247;</button><br><br>
+                <button id="four" type="button" onclick="displayNum('4')" class="btn btn-warning ms-1">4</button>
+                <button id="five" type="button" onclick="displayNum('5')" class="btn btn-warning ms-2">5</button>
+                <button id="six" type="button" onclick="displayNum('6')" class="btn btn-warning ms-2">6</button>
+                <button id="mul" type="button" onclick="displayNum('*')"
+                    class="btn btn-warning ms-2">&#215;</button><br><br>
+                <button id="one" type="button" onclick="displayNum('1')" class="btn btn-warning ms-1">1</button>
+                <button id="two" type="button" onclick="displayNum('2')" class="btn btn-warning ms-2">2</button>
+                <button id="three" type="button" onclick="displayNum('3')" class="btn btn-warning ms-2">3</button>
+                <button id="sub" type="button" onclick="displayNum('-')" class="btn btn-warning ms-2">-</button><br><br>
+                <button id="dec" type="button" onclick="displayNum('.')" class="btn btn-warning ms-2 ">.</button>
+                <button id="zero" type="button" onclick="displayNum('0')" class="btn btn-warning ms-2">0</button>
+                <button id="per" type="button" onclick="displayNum('%')" class="btn btn-warning ms-2">%</button>
+                <button id="add" type="button" onclick="displayNum('+')" class="btn btn-warning ms-2">+</button>
+                <button id="ac" type="button" onclick="allClear()" class="btn btn-warning mt-2">AC</button>
+                <button id="clr" type="button" onclick="lastDigit()" class="btn btn-warning ms-2 mt-2">&#9003;</button>
+                <button id="equal" type="button" onclick="evalExp()" class="btn btn-warning mt-2 ms-2">=</button>
+
+
+            </form>
+        </div>
+        <div class="col-5"></div>
+    </div>
+
+</body>
+<script src="./cal.js"></script>
+
+</html>
